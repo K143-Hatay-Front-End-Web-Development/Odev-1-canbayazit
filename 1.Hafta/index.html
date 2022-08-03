@@ -1,0 +1,52 @@
+Chrome'da Çalışıyor...
+<body>
+    <div class="head">
+       <div class="nose"></div>  
+  </div>  
+  </body>  
+  <style>
+    body{   
+      background: #293462;
+      display:flex;
+      justify-content:center;
+      align-items:center;      
+    }
+    .head{   /* kurbağanın kafası */
+      width: 150px;
+      height: 100px;
+      margin-top:20px;
+      background: radial-gradient(
+        circle at 50% -130px,
+        #fe5f55 200px,
+        #a64942 200px
+      );
+      border-radius:50px;
+      position:absolute;  
+    }  
+    .nose:before{   /* kurbağanın burunları */
+      content:"";
+      border:5px solid #293462; 
+      background:#293462;
+      top:49.6;
+      left:60;
+      border-radius:50%;
+      position:absolute;     
+      -webkit-box-reflect:right 10px;
+    }
+    .head::before{   /* kurbağanın gözleri */
+      content:"";
+      position:absolute;
+      width:10px;
+      height:10px;
+      border:10px solid #FFF1C1;
+      top:-15px;
+      left:25px;
+      border-radius:50%;
+      box-shadow:0 0 0 10px #FE5F55;
+      background:#293462;      
+      -webkit-box-reflect:right 40px;      
+    }   
+  </style>
+  <script src="index.js"> 
+  </script>
+  
